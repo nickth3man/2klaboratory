@@ -1,0 +1,92 @@
+{
+  "finishing": {
+    "formula": "weighted_median",
+    "inputs": [
+      "close_shot_med",
+      "driving_layup_med",
+      "driving_dunk_med",
+      "standing_dunk_med",
+      "post_control_med"
+    ],
+    "weights": [
+      0.22,
+      0.18,
+      0.25,
+      0.15,
+      0.2
+    ],
+    "notes": "Missing inputs are ignored and remaining weights re-normalized proportionally."
+  },
+  "shooting": {
+    "formula": "weighted_median",
+    "inputs": [
+      "midrange_shot_med",
+      "threepoint_shot_med",
+      "free_throw_med"
+    ],
+    "weights": [
+      0.4,
+      0.45,
+      0.15
+    ],
+    "notes": "Missing inputs are ignored and remaining weights re-normalized proportionally."
+  },
+  "playmaking": {
+    "formula": "weighted_median",
+    "inputs": [
+      "pass_accuracy_med",
+      "ball_handle_med",
+      "speed_with_ball_med"
+    ],
+    "weights": [
+      0.4,
+      0.35,
+      0.25
+    ],
+    "notes": "Missing inputs are ignored and remaining weights re-normalized proportionally."
+  },
+  "defense": {
+    "formula": "weighted_median",
+    "inputs": [
+      "interior_defense_med",
+      "perimeter_defense_med",
+      "steal_med",
+      "block_med",
+      "defensive_rebound_med"
+    ],
+    "weights": [
+      0.25,
+      0.25,
+      0.15,
+      0.15,
+      0.2
+    ],
+    "notes": "Missing inputs are ignored and remaining weights re-normalized proportionally."
+  },
+  "athleticism": {
+    "formula": "weighted_median",
+    "inputs": [
+      "speed_med",
+      "agility_med",
+      "strength_med",
+      "vertical_med"
+    ],
+    "weights": [
+      0.25,
+      0.25,
+      0.2,
+      0.3
+    ],
+    "notes": "Missing inputs are ignored and remaining weights re-normalized proportionally."
+  },
+  "_percentile_method": {
+    "type": "percentile-rank",
+    "range": [
+      0,
+      100
+    ],
+    "per_position": "groupby position rank(pct=True)*100",
+    "global": "rank(pct=True)*100",
+    "rounding": "2 decimals"
+  }
+}

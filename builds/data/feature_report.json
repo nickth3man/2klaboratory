@@ -1,0 +1,54 @@
+{
+  "rows_processed": 1257,
+  "nan_counts_per_stat_med": {
+    "agility_med": 0,
+    "ball_handle_med": 0,
+    "block_med": 0,
+    "close_shot_med": 0,
+    "defensive_rebound_med": 0,
+    "driving_dunk_med": 0,
+    "driving_layup_med": 0,
+    "free_throw_med": 0,
+    "interior_defense_med": 0,
+    "midrange_shot_med": 0,
+    "pass_accuracy_med": 0,
+    "perimeter_defense_med": 0,
+    "post_control_med": 0,
+    "speed_med": 0,
+    "speed_with_ball_med": 0,
+    "standing_dunk_med": 0,
+    "steal_med": 0,
+    "strength_med": 0,
+    "threepoint_shot_med": 0,
+    "vertical_med": 0
+  },
+  "composite_distributions": {
+    "finishing": {
+      "min": 30.0,
+      "median": 75.0,
+      "max": 93.0
+    },
+    "shooting": {
+      "min": 34.0,
+      "median": 80.0,
+      "max": 99.0
+    },
+    "playmaking": {
+      "min": 25.0,
+      "median": 71.0,
+      "max": 91.0
+    },
+    "defense": {
+      "min": 25.0,
+      "median": 77.5,
+      "max": 92.0
+    },
+    "athleticism": {
+      "min": 42.0,
+      "median": 75.0,
+      "max": 97.0
+    }
+  },
+  "builds_with_missing_stat_used_for_composites": 0,
+  "examples_of_missing_or_unusual_builds": []
+}

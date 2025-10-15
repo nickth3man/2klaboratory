@@ -1,0 +1,13 @@
+{
+  "source_files": [
+    "center.csv",
+    "pf.csv",
+    "pg.csv",
+    "sf.csv",
+    "sg.csv"
+  ],
+  "rows_processed": 1257,
+  "parsing_warnings_count": 0,
+  "parsing_warnings_examples": [],
+  "stat_columns_median_count": 21
+}
